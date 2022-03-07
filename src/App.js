@@ -19,6 +19,12 @@ function App() {
   const isMobile = useMediaQuery("(max-width: 480px)");
   const productData = product;
 
+  return (
+    <div className="App">
+      <main></main>
+    </div>
+  );
+
   // 2. Data coming from APIs is not always clean or ready to use.
   // Clean up the data coming from our products api, and format it
   // so that our frontend can use it.
@@ -46,12 +52,6 @@ function App() {
 
   // const cleanedProducts = products;
   // testCleanedProducts(cleanedProducts);
-
-  return (
-    <div className="App">
-      <main></main>
-    </div>
-  );
 }
 
 export default App;
