@@ -5,16 +5,20 @@ import { product, products } from "./api";
 import { testCleanedProducts } from "./test";
 
 function App() {
-  // Using the product data below, complete the following 2 tasks demonstrating your
+  // Using the productData below, complete the following 2 tasks demonstrating your
   // ability to use React, Javascript, Html and CSS.
 
-  // 1. A product page banner showing at least a photo of the dish and the title and description.
-  // People shop for food with their eyes so your design should be responsive.
-  // Feel free to use https://www.dishpatch.co.uk/feasts/pappardelle-beef-shin-ragu as inspiration, this is not a design test.
+  // 1. Create a product page banner showing at least a photo of the dish and the title and description.
+  // Your design should be responsive.
+  // Feel free to use https://www.dishpatch.co.uk/feasts/12-hr-ale-braised-beef as inspiration, this is not a design test.
 
   // NB
   // Create React components if you prefer, but you will not be rewarded or penalised on this basis.
   // Inline styling is fine
+
+  // To get started run either
+  // npm install && npm start
+  // yarn && yarn start
 
   const isMobile = useMediaQuery("(max-width: 480px)");
   const productData = product;
@@ -47,10 +51,13 @@ function App() {
   // };
 
   // NB
+  // Every property above is required
   // Serves should be a number. If there is no value for serves coming from the API, you can assume the value is 2
   // If there is no value for dietaries coming from the API, you can assume that the product is not vegetarian or vegan.
 
-  // const cleanedProducts = products;
+  // console.log('Products', products);
+  // const cleanedProducts = products; // clean up this array of products from the API
+  // console.log('Cleaned products', cleanedProducts);
   // testCleanedProducts(cleanedProducts);
 }
 
