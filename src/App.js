@@ -44,8 +44,8 @@ function App() {
   // Serves should be a number. If there is no value for serves coming from the API, you can assume the value is 2
   // If there is no value for dietaries coming from the API, you can assume that the product is not vegetarian or vegan.
 
-  const cleanedProducts = products;
-  testCleanedProducts(cleanedProducts);
+  // const cleanedProducts = products;
+  // testCleanedProducts(cleanedProducts);
 
   return (
     <div className="App">
